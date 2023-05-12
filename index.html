@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a  class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html"><img src="images/local_mall_FILL1_wght300_GRAD0_opsz48.svg" alt="site-icon">
+            <span class="text-uppercase fw-lighter ms-2">kitchen</span>
+            </a>
+        
+
+        <div class="order-lg-2 p-0 pt-4 nav-btns">
+            <button type="button" class="btn position-relative">
+                <img src="images/shopping_cart_FILL1_wght300_GRAD0_opsz48.svg" alt="cart" width="25">
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+            </button>
+            <button type="button" class="btn position-relative">
+                <img src="fresh/favorite_FILL1_wght300_GRAD0_opsz48 (1).svg" alt="heart" width="25">
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">13</span>
+            </button>
+            <button type="button" class="btn position-relative">
+                <img src="images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search" width="25">
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+            </button>
+        </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse oder-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#store">store</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#fresh">fresh</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#newstocks">new stocks</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#popular">popular</a>
+                </li>
+                <li class="nav-item px-2 py-2 border-0">
+                    <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel"  style="padding-top: 120px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Best in store</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">New Arrival</h1>
+                <a href="#" class="btn mt-4 text-uppercase">shop now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Best price and offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">New Orders</h1>
+                <a href="#" class="btn mt-4 text-uppercase">buy now</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <!-- end of header -->
+    <!-- collection -->
+    <section  id="collection" class=" py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Best Collection</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class=" btn text-dark m-2 active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class=" btn text-dark m-2 " data-filter=".best">Best Seller</button>
+                    <button type="button" class=" btn text-dark m-2" data-filter=".new">New Orders</button>
+                    <button type="button" class=" btn text-dark m-2" data-filter=".arrival">New Arrivals</button>
+                </div>
+
+                <div class="collection-list mt-xl-4 mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new ">
+                        <div class="collection-img">
+                            <img src="fresh/potato.webp" alt="potato" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best ">
+                        <div class="collection-img">
+                            <img src="newstock/stockfish.jpg" alt="potato" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img">
+                            <img src="fresh/pepper.webp" alt="potato" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best ">
+                        <div class="collection-img">
+                            <img src="fresh/crafish.jfif" alt="crafish" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new ">
+                        <div class="collection-img">
+                            <img src="fresh/groundnuts.webp" alt="pepper" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img">
+                            <img src="newstock/snail.jpg" alt="snail" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 arrival">
+                        <div class="collection-img">
+                            <img src="fresh/tomatoes.webp" alt="tomatoes" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new ">
+                        <div class="collection-img">
+                            <img src="fresh/plaintain.jpg" alt="plaintain" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best ">
+                        <div class="collection-img">
+                            <img src="newstock/dired fish.webp" alt="potato" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 arrival">
+                        <div class="collection-img">
+                            <img src="fresh/onions.jpg" alt="onions" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img">
+                            <img src="fresh/yam.jpeg" alt="yam" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 arrival">
+                        <div class="collection-img">
+                            <img src="fresh/melon.webp" alt="melon" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 arrival">
+                        <div class="collection-img">
+                            <img src="newstock/ogbono.jpeg" alt="melon" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img">
+                            <img src="newstock/eggs.webp" alt="melon" class="w-100 images" style="width: 100% !important; height: 350px !important; object-fit: cover;">
+                            <span class="position-absolute bg-primary d-flex align-items-center justify-content-center text-primary">Buy</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                                <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            </div>
+                            <p class="my-1">Fresh Potatoes</p>
+                            <p class="fw-bold">$ 40.30</p>
+                            <span class=""><ion-icon name="call"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Stocks</h2>
+            </div>
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-lx-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="newstock/red-oil.png" alt="red-oil" class="w-100" style="width: 100% !important; height: 400px !important; object-fit: cover;">
+                        <span class="position-absolute d-flex align-items-center justify-content-center fs-4"><ion-icon name="heart" style="color: black;"></ion-icon></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Undiluted palm oil</p>
+                        <span class="fw-bold d-block">$ 45.24</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-lx-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="special/ukwa.jpg" alt="red-oil" class="w-100" style="width: 100% !important; height: 400px !important; object-fit: cover;">
+                        <span class="position-absolute d-flex align-items-center justify-content-center fs-4"><ion-icon name="heart" style="color: black;"></ion-icon></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Breadfruit</p>
+                        <span class="fw-bold d-block">$ 45.24</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-lx-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="special/kings.jpg" alt="red-oil" class="w-100" style="width: 100% !important; height: 400px !important; object-fit: cover;">
+                        <span class="position-absolute d-flex align-items-center justify-content-center fs-4"><ion-icon name="heart" style="color: black;"></ion-icon></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Groundnut Oil</p>
+                        <span class="fw-bold d-block">$ 45.24</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blogs-->
+        <section id="offers" class="py-5">
+             <div class="container">
+                <div class="row d-flex align-items-center text-center justify-content-center justify-content-lg-start text-lg-start">
+                    <div class="offers-content">
+                        <span class="text-white">Discount Up To 40%</span>
+                        <h2 class="mt-2 mb-4 text-white">Grand Sales Offer!</h2>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                    
+                </div>
+             </div>
+        </section>
+    <!-- end of blogs -->
+
+    <!-- blogs -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Our Latest Blogs</h2>
+            </div>
+
+            <div class="row">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="special/blog.jfif" alt="blog">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+                        <p class="card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque quos consectetur eum nostrum? Reiciendis ipsa, soluta eum, dolor suscipit, debitis ipsam nulla porro expedita illum ratione natus fugiat doloribus!</p>
+                        <p class="caard-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> John Doe
+                            </small>
+                        </p>
+                            <a href="#" class="btn">Read More</a>
+                        
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="special/blog2.jpg" alt="blog">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+                        <p class="card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque quos consectetur eum nostrum? Reiciendis ipsa, soluta eum, dolor suscipit, debitis ipsam nulla porro expedita illum ratione natus fugiat doloribus!</p>
+                        <p class="caard-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> John Doe
+                            </small>
+                        </p>
+                            <a href="#" class="btn">Read More</a>
+                        
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="special/blog3.jpg" alt="blog">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+                        <p class="card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque quos consectetur eum nostrum? Reiciendis ipsa, soluta eum, dolor suscipit, debitis ipsam nulla porro expedita illum ratione natus fugiat doloribus!</p>
+                        <p class="caard-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> John Doe
+                            </small>
+                        </p>
+                            <a href="#" class="btn">Read More</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start ">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, unde. Sit, eum nulla, voluptate quisquam perferendis aliquid a expedita in error, harum provident asperiores? Odit dicta laboriosam iusto magnam explicabo.</p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="special/about us.avif" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of  about us -->
+    <!-- popular -->
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5"> Top Rated</h3>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/top-rated.jpeg" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Frozen Turkey</p>
+                            <span class="">$ 56.89</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/turkey.webp" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Frozen Turkey</p>
+                            <span class="">$ 42.49</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/turkeysmall.png" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Frozen Turkey</p>
+                            <span class="">$ 36.79</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5"> Best Selling</h3>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/hotdogbigger.jfif" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Hot Dogs</p>
+                            <span class="">$ 26.89</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/hotdogsmaller.webp" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Hot Dogs</p>
+                            <span class="">$ 16.09</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/rated.jfif" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Hot Dogs</p>
+                            <span class="">$ 56.89</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">On Sale</h3>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/indomie.jpg" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Indomie Noodles</p>
+                            <span class="">$ 10.89</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/tummy.jpg" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Tummy-Tummy Noodles</p>
+                            <span class="">$ 09.10</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="special/supreme.jpg" alt="top-rated" class="img-fluid pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0">Supreme Noodles</p>
+                            <span class="">$ 08.19</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+    <!-- Newsletter -->
+    <section id="Newsletter">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+                <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi magni perferendis nulla voluptates, et iure impedit.</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" required placeholder="Enter Your Email......">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of  Newsletter -->
+
+    <!-- footer section -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="index.html" class="text text-decoration-none brand text-white text-uppercase">Kitchen</a>
+                    <p class="text-muted text-white mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, ea pariatur! Doloremque, iusto atque incidunt rem voluptatum excepturi itaque facere.</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="">
+                        <li class="my-3  list-unstyled">
+                            <a href="" class="text-white text-decoration-none text-muted">
+                                <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>Home
+                            </a>
+                        </li>
+                        <li class="my-3 list-unstyled">
+                            <a href="" class="text-white text-decoration-none text-muted ">
+                                <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>Store
+                            </a>
+                        </li>
+                        <li class="my-3  list-unstyled">
+                            <a href="" class="text-white text-decoration-none text-muted">
+                                <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>Fresh
+                            </a>
+                        </li>
+                        <li class="my-3  list-unstyled">
+                            <a href="" class="text-white text-decoration-none text-muted">
+                                <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>New Stock
+                            </a>
+                        </li>
+                        <li class="my-3  list-unstyled">
+                            <a href="" class="text-white text-decoration-none text-muted">
+                                <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>Popular
+                            </a>
+                        </li>
+                        <li class="my-3  list-unstyled">
+                            <a href="" class="text-white text-decoration-none text-muted">
+                                <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                     <h5 class="fw-light mb-3">Contact Us</h5>
+                     <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="">
+                            <ion-icon name="locate"></ion-icon>
+                        </span>
+                        <span class="fw-light">
+                            Airport Road, PH Rivers State
+                        </span>
+
+                     </div>
+                     <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="">
+                            <ion-icon name="mail-open"></ion-icon>
+                        </span>
+                        <span class="fw-light">
+                            nancitonana@gmail.com
+                        </span>
+
+                     </div>
+                     <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <a href="tel:8102924039" class="list-unstyled text-decoration-none"><span class="">
+                            <ion-icon name="call"></ion-icon>
+                        </span>
+                        <span class="fw-light">
+                            +234 8102924039
+                        </span>
+                        </a>
+                     </div>
+                     <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <a href="https://github.com/Nanagabby95" class="list-unstyled text-decoration-none" >
+                        <span class="">
+                            <ion-icon name="logo-github" ></ion-icon>
+                        </span>
+                        <span class="fw-light">
+                            github
+                        </span>
+                    </a>
+                     </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div class="d-flex">
+                        <u class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted">
+                                    <ion-icon name="locate"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted">
+                                    <ion-icon name="locate"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted">
+                                    <ion-icon name="locate"></ion-icon>
+                                </a>
+                            </li>
+                        </u>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end of footer section -->
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3-6.4.js"></script>
+    <!-- ion-icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- bootstrap -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- isotype js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- custom js -->
+    <script src="index.js"></script>
+</body>
+</html>
