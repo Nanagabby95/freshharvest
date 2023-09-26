@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce cart</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a  class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="/src/cart.html"><img src="/images/local_mall_FILL1_wght300_GRAD0_opsz48.svg" alt="site-icon">
+            <span class=" brand text-black text-uppercase">Fresh<span class="logotxt">harvest</span></a>
+            </a>
+        
+            <!-- <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBSUCVCZ0tcDir2zJIbjBgrTdTize6c7uY&callback=myMap"></script> -->
+
+        <div class="order-lg-2 p-0 pt-4 nav-btns">
+            <a href="yourCart.html">
+                <button type="button" class="btn position-relative">
+                    <div class="box">
+                        <!-- <div class="cart-count position-absolute top-0 start-100 translate-middle badge bg-primary">0</div> -->
+                        <div class="cart"> 
+                            <ion-icon name="cart"  id="cart-icon" alt="cart" width="25"></ion-icon>
+                            <div id="CartAmount" class="CartAmount">0</div>
+                    </div>
+                </button>
+            </a>
+          
+        </div>
+        
+
+            
+        </div>
+    </nav>
+
+    <div id="label" class="text-center dynamic-css">
+
+    </div>
+
+    <div id="shopping-cart" class="shopping-cart">
+
+    </div>
+
+    <script src="/src/Data.js"></script>
+    <script src="/src/cart.js"></script>
+</body>
+</html>

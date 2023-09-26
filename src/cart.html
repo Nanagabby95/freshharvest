@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+    <link rel="stylesheet" href="/src/modal.css">
+    <link rel="stylesheet" href="/src/art1.html">
+    <link rel="stylesheet" href="/src/art2.html">
+    <link rel="stylesheet" href="/src/art3.html">
+    
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a  class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="/src/cart.html"><img src="/images/local_mall_FILL1_wght300_GRAD0_opsz48.svg" alt="site-icon">
+            <span class="text-uppercase fw-lighter ms-2 logo">Fresh<span class="logotxt">Harvest</span></span>
+            </a>
+        
+        <div class="order-lg-2 p-0 pt-4 nav-btns">
+            <a href="/src/yourCart.html" class="text-dark">
+                <button type="button" class="btn position-relative">
+                    <div class="box">
+                        <div class="cart"> 
+                            <ion-icon name="cart"  id="cart-icon" alt="cart" width="25" title="your cart"></ion-icon>
+                            <div id="CartAmount" class="CartAmount">0</div>
+                        </div>
+            </a>
+                <!-- </button> -->
+            
+            <!-- <button type="button" class="btn position-relative" title="waitlist">
+                <img src="fresh/favorite_FILL1_wght300_GRAD0_opsz48 (1).svg" alt="heart" width="25">
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">13</span>
+            </button> -->
+            <button type="button" class="btn position-relative" title="login" onclick="document.getElementById('id01').style.display='block'">
+                <ion-icon name="person"></ion-icon>
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+            </button>
+            <!-- <button type="button" class="btn position-relative">
+                <img src="images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search" width="25">
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+            </button> -->
+        </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse oder-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                </li>
+                <!-- <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#fresh">fresh</a>
+                </li> -->
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#offers">Blogs</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#popular">popular</a>
+                </li>
+                <li class="nav-item px-2 py-2 border-0">
+                    <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header id="header" class="vh-100 carousel slide" data-bs-ride="carousel"  style="padding-top: 120px;">
+    <div class="container h-100 d-flex align-items-center carousel-inner">
+        <div class="text-center carousel-item active">
+            <h2 class="text-capitalize text-white">Best in store</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">New Arrival</h1>
+            <a href="#shop" class="btn mt-4 text-uppercase">shop now</a>
+        </div>
+        <div class="text-center carousel-item">
+            <h2 class="text-capitalize text-white">Best price and offer</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">New Orders</h1>
+            <a href="#" class="btn mt-4 text-uppercase">buy now</a>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="prev">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</header>
+
+<div class="container py-5">
+    <div class="title text-center">
+        <h2 class="position-relative d-inline-block">Best Collection</h2>
+    </div>
+    <div class="row g-0">
+        <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+            <button type="button" class=" btn text-dark m-2 active-filter-btn">All</button>
+            <!-- <button type="button" class=" btn text-dark m-2 " data-filter=".best">Best Seller</button> -->
+            <!-- <button type="button" class=" btn text-dark m-2" data-filter=".new">New Orders</button> -->
+            <!-- <button type="button" class=" btn text-dark m-2" data-filter=".arrival">New Arrivals</button> -->
+        </div>
+
+        <div class="container">
+            <div class="row gap-4">
+              <div class="mt-5 col-lg-12 col-sm-12 col-md-6">
+                <!-- First data section -->
+                <div class="shop collection-list mt-xl-5 row gx-0 gy-5 container" id="shop">
+                  <!-- Your content for the first data section goes here -->
+                </div>
+              </div>
+        
+              <!-- Second data section -->
+              <div class="col-lg-12 col-sm-12 col-md-6">
+                <!-- <div class="title text-center pt-5 mt-5" id="fresh">
+                  <h2 class="position-relative d-inline-block">Fresh Stocks</h2>
+                </div> -->
+                <div class="shop collection-list mt-xl-5 row gx-0 gy-5 container" id="Freshshop">
+                  <!-- Your content for the second data section goes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+</div> 
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5"> Top Rated</h3>
+                    <div class="d-flex align-items-start justify-content-start food-box">
+                        <img src="/images/special/top-rated.jpeg" alt="top-rated" class="img-fluid food-img pe-3 w-25">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Frozen Turkey</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start food-box">
+                        <img src="/images/special/turkey.webp" alt="top-rated" class="img-fluid pe-3 w-25 food-img">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Frozen Turkey</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <span class="food-price">$ 42.49</span> -->
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start food-box">
+                        <img src="/images/special/turkeysmall.png" alt="top-rated" class="img-fluid pe-3 w-25 food-img">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Frozen Turkey</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3 food-box">
+                    <h3 class="fs-5"> Best Selling</h3>
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="/images/special/hotdogbigger.jfif" alt="top-rated" class="img-fluid pe-3 w-25 food-img">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Hot Dogs</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <span class="food-price">$ 26.89</span> -->
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start food-box">
+                        <img src="/images/special/hotdogsmaller.webp" alt="top-rated" class="img-fluid pe-3 w-25 food-img">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Hot Dogs</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <span class="food-price">$ 16.09</span> -->
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start food-box">
+                        <img src="/images/special/rated.jfif" alt="top-rated" class="img-fluid pe-3 w-25 food-img">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Hot Dogs</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Today's Delivery</h3>
+                    <div class="d-flex align-items-start justify-content-start food-box">
+                        <img src="/images/special/indomie.jpg" alt="top-rated" class="img-fluid pe-3 w-25 food-img ">
+                        <div class="">
+                            <p class="mb-0 food-title">Indomie Noodles</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                    <div class="d-flex ali/images/gn-items-start justify-content-start food-box">
+                        <img src="/images/special/tummy.jpg" alt="top-rated" class="img-fluid pe-3 w-25 food-img">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Tummy-Tummy Noodles</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start food-box">
+                        <img src="/images/special/supreme.jpg" alt="top-rated" class="img-fluid pe-3 w-25 food-img">
+                        <div class=" ">
+                            <p class="mb-0 food-title">Supreme Noodles</p>
+                            <span class="food-price text-danger fw-bold">Sold</span>
+                            <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="title text-center pt-5 mt-0">
+            <h2 class="position-relative d-inline-block">Our Offers</h2>
+        </div>
+<section id="offers" class="py-5 mt-5">
+    <div class="container pt-5">
+       <div class="row d-flex align-items-center text-center justify-content-center justify-content-lg-start text-lg-start">
+           <div class="offers-content">
+               <span class="text-white">Discount Up To 40%</span>
+               <h2 class="mt-2 mb-4 text-white">Grand Sales Offer!</h2>
+               <a href="#shop" class="btn">Buy Now</a>
+           </div>
+           
+       </div>
+    </div>
+</section>
+
+<!-- blogs -->
+<section id="blogs" class="py-5 mt-5">
+    <div class="container">
+        <div class="title text-center">
+            <h2 class="position-relative d-inline-block">Our Latest Blogs</h2>
+        </div>
+
+        <div class="row py-5 mt-5">
+            <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src="/images/special/blog.jfif" alt="blog">
+                <div class="card-body px-0 ">
+                    <a href="/src/art1.html" class="text-decoration-none text-dark card-title"><h4 class="card-title">Make Money With FRESHHARVEST</h4></a>
+                    <p class="card-text mt-3 text-muted">Are you passionate about healthy living and natural, unprocessed foods? Do you want to turn your passion into a thriving business opportunity? Look no further than FRESHHARVEST, your gateway to a world of fresh, raw, and wholesome food....</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">Author:</span> Lucia Matthew
+                        </small>
+                    </p>
+                        <a href="/src/art1.html" class="btn">Read More</a>
+                        <div class="rating mt-3">
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                        </div>
+                </div>
+            </div>
+            <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src="/images/special/blog2.jpg" alt="blog">
+                <div class="card-body px-0">
+                    <a href="/src/art2.html" class="text-decoration-none text-dark card-title"><h4 class="card-title">8 FoodStuff Ideas Nobody Told You About</h4></a>
+                    <p class="card-text mt-3 text-muted">When it comes to Nigerian cuisine, we often think of staple foods like rice, beans, yam, and plantains. However, there's a wealth of creative and delightful dishes that can be made using everyday foodstuffs like tomatoes, potatoes, groundnuts...</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">Author:</span> Mercy Chimdi
+                        </small>
+                    </p>
+                        <a href="/src/art2.html" class="btn">Read More</a>
+                        <div class="rating mt-3">
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                        </div>
+                </div>
+            </div>
+            <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src="/images/special/blog3.jpg" alt="blog">
+                <div class="card-body px-0">
+                    <a href="/src/art3.html" class="text-decoration-none text-dark card-title"><h4 class="card-title">How I Successfully Become a Logistic Service Partner with FRESHHarvest</h4></a>
+                    <p class="card-text mt-3 text-muted">In the bustling world of logistics, finding the right partnership can be a game-changer for your business. My journey into the logistics industry led me to an invaluable collaboration with FRESHHarvest...</p>
+                    <p class="caard-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">Author:</span> Keneth Edeth
+                        </small>
+                    </p>
+                        <a href="/src/art2.html" class="btn">Read More</a>
+                        <div class="rating mt-3">
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                            <span class="text-primary"><ion-icon name="star"></ion-icon></span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of blogs -->
+
+<!-- about us -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row gy-lg-5 align-items-center">
+            <div class="col-lg-6 order-lg-1 text-center text-lg-start ">
+                <div class="title pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                </div>
+                <p class="lead text-muted">Your premier destination for top-quality African raw food items sourced from around the world. </p>
+                <p>At FRESHHARVEST, we are passionate about bringing you the freshest, most natural and nutritious products straight from nature's bounty. We meticulously select our raw food products, ensuring they meet the highest standards of purity, freshness, and nutritional value.</p>
+            </div>
+            <div class="col-lg-6 order-lg-0">
+                <img src="/images/special/about us.avif" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!--end of  about us -->
+
+ <!-- fuctionality for google map -->
+<div class="py-5 mt-5">
+    <h3 class="text-center py-4 fw-bold">FRESH<span class="logotxt">HARVEST</span> Partners are Everywhere in NIgeria</h3>
+    <div id="googleMap"></div>
+
+ <!-- register section -->
+    
+ <div class="scrolling-text-container pt-5 mt-5">
+    <h3 class="scrolling-text fw-bold">
+      JOIN THOUSANDS OF PARTNERS TODAY AND MAKE SALES BEYOND LIMITS....
+    </h3> 
+  </div>
+  <!-- login modal -->
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="/images/fresh/avartar.avif" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit" class="login-button">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <div class="bg-img">
+    <div class="bg-img">
+        <form action="#" class="form-container" id="newsletterForm">
+          <div>
+            <h3 class="fw-bolder text-uppercase">REGISTER</h3>
+          </div>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Your Product Name" name="email" required id="newsletterEmail">
+      
+          <label for="product"><b>Product</b></label>
+          <input type="text" placeholder="Your Product Name" name="product" required id="product">
+      
+          <label for="location"><b>Location</b></label>
+          <input type="text" placeholder="Location" name="location" required id="location">
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required id="password">
+          <button type="submit" class="form-btn" id="subscribeBtn">Submit</button>
+        </form>
+  </div>
+</div>
+<div class="title text-center py-5 mt-5">
+    <h2 class="position-relative d-inline-block">Reach out today!</h2>
+</div>
+<footer class="bg-dark pt-5">
+    <div class="container">
+        <div class="row text-white g-4">
+            <div class="col-md-6 col-lg-3">
+                <a href=" " class="text text-decoration-none brand text-white text-uppercase">Fresh<span class="logotxt">harvest</span></a>
+                <p class="text-muted text-white mt-3">We believe in fostering a community that celebrates the love for cooking and the joy of savoring a great meal. Our e-commerce platform is designed to make your shopping experience seamless, so you can focus on what matters most - creating delightful dishes for yourself and your loved ones.  Happy Cooking</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light">Links</h5>
+                <ul class="">
+                    <li class="my-3  list-unstyled">
+                        <a href="#home" class="text-white text-decoration-none text-muted">
+                            <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>Home
+                        </a>
+                    </li>
+                    <!-- <li class="my-3 list-unstyled">
+                        <a href="" class="text-white text-decoration-none text-muted">
+                            <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>collection
+                        </a>
+                    </li> -->
+                    <!-- <li class="my-3  list-unstyled">
+                        <a href="" class="text-white text-decoration-none text-muted">
+                            <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>Fresh
+                        </a>
+                    </li> -->
+                    <!-- <li class="my-3  list-unstyled">
+                        <a href="" class="text-white text-decoration-none text-muted">
+                            <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>New Stock
+                        </a>
+                    </li> -->
+                    <li class="my-3  list-unstyled">
+                        <a href="#popular" class="text-white text-decoration-none text-muted">
+                            <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>Popular
+                        </a>
+                    </li>
+                    <li class="my-3  list-unstyled">
+                        <a href="#about" class="text-white text-decoration-none text-muted">
+                            <ion-icon name="arrow-dropright" style="color: white !important;"></ion-icon>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                 <h5 class="fw-light mb-3">Developer</h5>
+                 <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="">
+                        <ion-icon name="locate"></ion-icon>
+                    </span>
+                    <span class="fw-light">
+                        Airport Road, PH Rivers State
+                    </span>
+
+                 </div>
+                 <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="">
+                        <ion-icon name="mail-open"></ion-icon>
+                    </span>
+                    <span class="fw-light">
+                        <a href="mailto:nancitonana@gmail.com" class="text-decoration-none text-muted">nancitonana@gmail.com</a>
+                    </span>
+
+                 </div>
+                 <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <a href="tel:8102924039" class="list-unstyled text-decoration-none"><span class="">
+                        <ion-icon name="call" class="text-muted"></ion-icon>
+                    </span>
+                    <span class="fw-light text-muted">
+                        +234 8102924039
+                    </span>
+                    </a>
+                 </div>
+                 <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <a href="https://github.com/Nanagabby95" class="list-unstyled text-decoration-none" >
+                    <span class="">
+                        <ion-icon name="logo-github" class="text-muted"></ion-icon>
+                    </span>
+                    <span class="fw-light text-muted">
+                        github
+                    </span>
+                    </a>
+                 </div>
+                 <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <a href="https://gabriel-nancy-a-qpws.vercel.app/#contact" class="list-unstyled text-decoration-none" >
+                    <span class="">
+                        <ion-icon name="code" class="text-muted"></ion-icon>
+                    </span>
+                    <a href="https://gabriel-nancy-a-qpws.vercel.app/#contact" class="list-unstyled text-decoration-none""><span class="fw-light text-muted">
+                       website
+                    </span></a>
+                    </a>
+                 </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">NEED HELP?</h5>
+                <div class="d-flex">
+                    <u class="list-unstyled">
+                        <li>
+                            <a href="tel:08102924039" class="text-danger fw-light">contact us</a>
+                        </li>
+                        <li>
+                            <a href="tel:08102924039" class="text-danger fw-light">help center</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/+2348102924039?=I'm%20interested%20in%20your%20service" class="text-danger fw-light">report a product</a>
+                        </li>
+                    </u>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  
+  <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAzejRJ2yiAtK2l_du_g9CMP10td_xROB0",
+    authDomain: "e-commerce-reg.firebaseapp.com",
+    projectId: "e-commerce-reg",
+    storageBucket: "e-commerce-reg.appspot.com",
+    messagingSenderId: "271517824731",
+    appId: "1:271517824731:web:b3467d30dcd0167928fefe",
+    measurementId: "G-55221S73GW"
+  };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+
+        document.getElementById("newsletterForm").addEventListener('submit', function(e) {
+          e.preventDefault(); // Prevents the default form submission
+
+          const email = document.getElementById("newsletterEmail").value;
+          const product = document.getElementById("product").value;
+          const location = document.getElementById("location").value;
+          const password = document.getElementById("password").value;
+
+          // Assuming you want to store the user's email, product, and location under a specific path (e.g., 'subscribers')
+          firebase.database().ref('subscribers').push({ email, product, location, password })
+            .then(() => {
+              alert("Registration successful");
+              newsletterForm.reset();
+            })
+            .catch(error => {
+              console.error("Error subscribing:", error);
+            });
+        });
+  </script>
+<script>
+    var map;
+    var markers = [];
+
+    const citymap = {
+        chicago: {
+            center: { lat: 41.878, lng: -87.629 },
+            population: 2714856,
+        },
+        newyork: {
+            center: { lat: 40.714, lng: -74.005 },
+            population: 8405837,
+        },
+        losangeles: {
+            center: { lat: 34.052, lng: -118.243 },
+            population: 3857799,
+        },
+        vancouver: {
+            center: { lat: 49.25, lng: -123.1 },
+            population: 603502,
+        },
+        nigeria: {
+            center: { lat: 9.081999, lng: 8.675277 },
+            population: 206139587, // Population of Nigeria (as of 2021)
+        },
+    };
+
+    function myMap() {
+        var nigeriaLatLng = new google.maps.LatLng(9.081999, 8.675277);
+
+        var mapProp = {
+            center: nigeriaLatLng,
+            zoom: 7
+        };
+
+        map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var input = document.getElementById("locationSearchInput");
+        var searchBox = new google.maps.places.SearchBox(input);
+
+        map.addListener("bounds_changed", function() {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        searchBox.addListener("places_changed", function() {
+            clearMarkers();
+            var places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function(place) {
+                if (!place.geometry) {
+                    console.log("Returned place contains no modulegeometry");
+                    return;
+                }
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    title: place.name,
+                    position: place.geometry.location,
+                });
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: "Hello World!"
+                });
+
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+
+                markers.push(marker);
+
+                if (place.geometry.viewport) {
+                    bounds.union(place.geometry.viewport);
+                } else {
+                    bounds.extend(place.geometry.location);
+                }
+            });
+
+            map.fitBounds(bounds);
+        });
+    }
+
+    function initMap() {
+        myMap();
+
+        // Construct the circle for each value in citymap.
+        // Note: We scale the area of the circle based on the population.
+        for (const city in citymap) {
+            // Add the circle for this city to the map.
+            const cityCircle = new google.maps.Circle({
+                strokeColor: "#FF0000",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: "#FF0000",
+                fillOpacity: 0.35,
+                map,
+                center: citymap[city].center,
+                radius: Math.sqrt(citymap[city].population) * 100,
+            });
+        }
+    }
+
+    function clearMarkers() {
+        markers.forEach(function(marker) {
+            marker.setMap(null);
+        });
+        markers = [];
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyBSUCVCZ0tcDir2zJIbjBgrTdTize6c7uY&callback=myMap"></script>
+<!-- end of footer section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3-6.4.js"></script>
+    <!-- ion-icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- bootstrap -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- isotype js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- custom js -->
+    <script src="/src/Data.js"></script>
+    <script src="/src/index.js"></script>
+    <script src="/src/modal.js"></script>
+</body>
+</html>
